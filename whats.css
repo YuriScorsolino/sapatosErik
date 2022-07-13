@@ -1,0 +1,266 @@
+*{
+  font-family: Arial, Helvetica, sans-serif;
+}
+body{
+  background-color: #d3d3d3
+}
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 1150px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.container .card{
+  position: relative;
+  padding: 10px;
+  width: 300px;
+  background-color: #fff;
+  margin: 20px;
+  border: 1px solid black;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: 0.5s;
+  text-align: center;
+
+}
+.container .card img{
+  transform: 0.5s;
+}
+.container .card h1{
+font-size: 2rem;
+}
+.container .card .content{
+  padding: 20px;
+  text-align: center;
+}
+.container .card .content p{
+  color: #666;
+  transition: 0.5s;
+}
+.container .card .content a{
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 40px;
+  text-decoration: none;
+  transition: 0.5s;
+  outline: none;
+  margin-top:20px;
+}
+.container .card:hover{
+  background-color: #dc2e69;
+  color: white;
+  margin-top: -30px;
+  box-shadow: 2px 20px 25px #dc2e686d;
+  border-color: #dc2e69;
+}
+.container .card:hover img{
+filter: invert(1);
+}
+.container .card:hover .content p{
+  color: white;
+}
+.container .card:hover .content a{
+  color: black;
+  background-color: white;
+}
+
+/* foto-nome*/
+.foto-nome{
+  margin-top: 5%;
+  max-width: 100%;
+}
+#yuri{
+  border-radius: 50%;
+  margin-left: 30%;
+}
+#frase{
+  margin-left: 10%;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(8, 5, 5);
+}
+
+@media screen and (min-width: 300px) {
+  .foto-nome {
+    float: none;
+    width: 100%;
+    margin-top: 20%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .foto-nome {
+    float: none;
+    width: 100%;
+    margin-top: 10%;
+  }
+}
+
+hr
+{
+  border-color: #ffffff; 
+}
+
+#sobremim
+{
+color: rgb(4, 5, 5);
+font-size: 25px;
+font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+  color: black;
+}
+.text-center{
+  margin-top: 3%;
+}
+
+@media screen and (min-width: 300px) and (max-width: 2000px) {
+.container {
+  float: none;
+  width: 80%;
+  margin-top: -2%;
+}
+.container .card:hover{
+  background-color: #dc2e69;
+  color: white;
+  margin-top: -5px;
+  box-shadow: 2px 20px 25px #dc2e686d;
+  border-color: #dc2e69;
+}
+
+}
+
+
+/*botao*/
+
+.btn:link,
+.btn:visited {
+text-transform: uppercase;
+text-decoration: none;
+padding: 15px 40px;
+display: inline-block;
+border-radius: 100px;
+transition: all .2s;
+position: relative;
+}
+
+.btn:hover {
+transform: translateY(-3px);
+box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+transform: translateY(-1px);
+box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-white {
+background-color: #fff;
+color: rgb(0, 0, 0);
+}
+
+.btn::after {
+content: "";
+display: inline-block;
+height: 100%;
+width: 100%;
+border-radius: 100px;
+position: absolute;
+top: 0;
+left: 0;
+z-index: -1;
+transition: all .4s;
+}
+
+.btn-white::after {
+background-color: #fff;
+}
+
+.btn:hover::after {
+transform: scaleX(1.4) scaleY(1.6);
+opacity: 0;
+}
+
+.btn-animated {
+animation: moveInBottom 5s ease-out;
+animation-fill-mode: backwards;
+}
+
+@keyframes moveInBottom {
+0% {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+100% {
+    opacity: 1;
+    transform: translateY(0px);
+}
+}
+
+/*card projetos*/
+
+.container1 .card1{
+position: relative;
+padding: 30px;
+width: 300px;
+height: 450px;
+background-color: #fff;
+margin: 20px;
+border: 1px solid rgb(255, 255, 255);
+border-radius: 20px;
+overflow: hidden;
+transition: 0.5s;
+text-align: center;
+}
+.container1 .card1 img{
+transform: 0.5s;
+}
+.container1 .card1 h1{
+font-size: 2rem;
+}
+.container1 .card1 .content{
+padding: 20px;
+text-align: center;
+}
+.container1 .card1 .content p{
+color: rgb(253, 250, 250);
+transition: 0.5s;
+}
+.container1 .card1 .content a{
+position: relative;
+display: inline-block;
+padding: 10px 20px;
+background-color: rgb(255, 240, 240);
+color: #fff;
+border-radius: 40px;
+text-decoration: none;
+transition: 0.5s;
+outline: none;
+margin-top:20px;
+}
+.container1 .card1:hover{
+background-color: #dc2e69;
+color: white;
+margin-top: -30px;
+box-shadow: 2px 20px 25px #dc2e686d;
+border-color: #dc2e69;
+}
+.container1 .card1:hover .content p{
+color: white;
+}
+.container1 .card1:hover .content a{
+color: rgb(255, 255, 255);
+background-color: white;
+}
+
+/*whats*/
